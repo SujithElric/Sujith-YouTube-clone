@@ -1,0 +1,126 @@
+.video-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap:16px;
+}
+
+@media(max-width:750px){
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media(min-width:751px) and (max-width:1000px){
+    .video-grid{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media(min-width:1001px){
+    .video-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1001px) {
+    .video-title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+@media (min-width: 1001px) {
+    .video-author,
+    .video-stats {
+      font-size: 14px;
+    }
+  }
+
+
+.thumbnail-row{
+    margin-bottom:8px;
+    position:relative;
+    z-index:1;
+}
+
+.video-time{
+    background-color:black;
+    color:white;
+    position:absolute;
+    right:4px;
+    bottom:10px;
+    font-size:12px;
+    font-weight:500;
+    padding:4px;
+    border-radius:2px;
+}
+
+.thumbnail{
+    width:100%;
+}
+
+.video-details{
+    display:grid;
+    grid-template-columns: 48px 1fr;
+}
+
+.channel-icon{
+    position:relative;
+    
+}
+
+.profile-pic{
+    width:36px;
+    height:36px;
+    border-radius:20px;
+}
+
+.video-title{
+    font-weight:500;
+    font-size:14px;
+    margin-bottom:10px;
+    line-height:18px;
+    color:black;
+}
+
+.channel-name, .video-stats{
+    font-size:12px;
+    color:rgb(96,96,96);
+}
+
+.channel-name{
+    margin-bottom:4px;
+}
+
+.channel-outlook{
+    display:flex;
+    background-color:white;
+    position:absolute;
+    z-index:300;
+    padding:10px;
+    padding-right:15px;
+    border-radius:5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    white-space:nowrap;
+    opacity:0;
+    pointer-events: none;
+    bottom:-30px;
+}
+.channel-icon:hover .channel-outlook{
+    opacity:1;
+}
+
+.channel-outlook img{
+    width:44px;
+    height:44px;
+    border-radius:30px;
+    margin-right:8px;
+}
+
+.channel-outlook-name{
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:3px;
+}
+.channel-outlook-subscribers{
+    font-size:12px;
+    color:rgb(77, 77, 77);
+}
